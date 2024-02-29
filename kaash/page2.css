@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  color: white;
+}
+
+.header {
+  background-color: rgb(1 1 1 /75%);
+  padding: 1rem;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+
+  backdrop-filter: blur(20px);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.ul {
+  list-style: none;
+}
+
+.ul li {
+  display: inline-block;
+  margin-inline: 2rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+li,
+a,
+button {
+  color: white;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(47, 45, 45);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  margin: 0%;
+}
+
+.lap1 img {
+  width: 100%;
+
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.lap1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.img img {
+  height: 455px;
+}
+
+.img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+
+  width: 50%;
+
+}
+
+.text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 50%;
+  background-color: black;
+  border-radius: 15px;
+
+}
+
+.name {
+  text-align: center;
+}
+
+.details {
+  padding-left: 100px;
+  line-height: 1.6;
+
+
+}
+
+.buy {
+
+  border-radius: 20px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  width: 130px;
+  margin-left: 50%;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+
+.footer {
+  padding: 20 px;
+  background-color: black;
+}
+
+
+.footer-grid a {
+  font-size: smaller;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-inline: 30px;
+}
+.fa {
+  padding: 20px;
+  font-size: 80px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa-instagram {
+ 
+  color: white;
+}
+.footer-legal {
+  font-size: smaller;
+  margin-top: 20px;
+}

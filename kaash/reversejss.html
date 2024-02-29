@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var str = prompt("enter the input");
+        if (isNaN(str)) {
+            str = str.toLowerCase();
+            var f = 0;
+            for (var i = 0; i < str.length; i++) {
+                var char = str.charAt(i)
+                if (char == "a" || char == "e" || char == "i" || char == "o" || char == "u") {
+                    f = 1;
+                    break;
+                }
+            }
+            if (i == 1)
+                alert("the position of left most vowel is : " + (i + 1));
+            else
+                alert("no vowel found");
+        }
+        else {
+            var str = parseInt(str);
+            var a, b, temp = 0;
+            b = str;
+            while (b > 0) {
+                a = parseInt(b % 10);
+                b = parseInt(b / 10);
+                temp = temp * 10 + a;
+            }
+            alert("the reverse of number is " + temp);
+        }
+    </script>
+
+</body>
+
+</html>

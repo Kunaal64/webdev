@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="finalpage2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="header">
+    <div>
+      <a href="finalpage1.html"> <img src="logo.png" width="100px"
+          style="border-radius: 15px;margin: 0%; padding: 0px;height:80px ; margin-left:15px;"></a>
+    </div>
+    <div class="topnav" id="myTopnav">
+      <a href="finalpage1.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Mobile
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="finalpage2.html">Phone 1|1+</a>
+          <a href="finalpage3.html">Phone 2|2+</a>
+
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Laptop
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="finallap1.html">PikaBook 1</a>
+          <a href="finallap2.html">Thunder 1</a>
+
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Buds 1
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="finanbud.html">Buds 1</a>
+
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+  <h1 style="margin-left: 10px;">PikaBook 1</h1>
+  <div class="head-image">
+    <img src="GB3_Product-Marketing_1440x8104.avif" alt="">
+  </div>
+
+
+  <form action="./finaldata.php" method="post">
+    <div class="device">
+      <h3>Device</h3>
+      <div class="device-radio">
+        <div class="device-type">
+          <input type="radio" id="p1" name="dname" value="EleBook1" checked="checked">
+          <div class="radio-tile">
+            <label for="p1">PikaBook 1<br><small>40.62cm AMOLED display</small></label>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <hr>
+    <div class="device">
+      <h3>Operating System</h3>
+      <div class="device-radio">
+        <div class="device-type">
+          <input type="radio" id="op1" name="op" value="Windows11" checked="checked">
+          <div class="radio-tile" style="transform: translateX(-20px);">
+            <label for="op1">Windows 11 Home</small></label>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <hr>
+    <div class="device">
+      <h3>Processor</h3>
+      <div class="device-radio">
+        <div class="device-type">
+          <input type="radio" id="pr1" name="processor" value="i9-13900h" checked="checked">
+          <div class="radio-tile">
+            <label for="pr1">Intel® Core™ i9-13900H</small></label>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <hr>
+    <div class="spec">
+      <div class="image-color" style="width:20rem;height:20rem;margin:10px;">
+        <div class="image">
+          <img src="product_color_graphite.webp" id="phone-image" alt="">
+        </div>
+
+      </div>
+      <div class="vl"></div>
+      <div class="device-property">
+
+        <div class="color-property">
+
+
+          <h3> Color</h3>
+          <div class="color-radio" style="margin-right: 200px;">
+            <div class="color-type">
+              <input type="radio" id="green" name="spec" value="Graphite" checked="checked" onclick="imagegreen()">
+              <div class="color-tile">
+                <label for="green">
+                  <img src="color_graphite_MO.webp" alt="" class="csize"><br>Graphite
+                </label>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+      <script type="text/javascript">
+        function imagegreen() {
+          document.getElementById("phone-image").src = "product_color_graphite.webp";
+        }
+
+      </script>
+
+    </div>
+    <hr>
+    <div class="device">
+      <h3>Storage</h3>
+      <div class="device-radio">
+        <div class="device-type">
+          <input type="radio" id="p1" name="memory" value="Phone 1">
+          <div class="radio-tile">
+            <label for="p1"><small>Storage:1TB<br>RAM:32GB</small></label>
+          </div>
+        </div>
+        <div class="device-type">
+          <input type="radio" id="ps2" name="memory" value="256gb 16gb" checked="checked">
+          <div class="radio-tile">
+            <label for="ps2"><small>Storage:256GB<br>RAM:16GB</small></label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="address">
+      <h3>Delivery Details</h3>
+      <div class="details">
+        <div class="delbox">
+          <label for="name">
+            <h4>Name</h4>
+          </label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="delbox">
+          <label for="phno">
+            <h4>Phone no.</h4>
+          </label>
+          <input type="tel" name="phoneno" id="phno" maxlength="10" minlength="10" pattern="[9-7]{1}-[0-9]{9}"
+            required>
+        </div>
+        <div class="delbox">
+          <label for="add">
+            <h4>Address</h4>
+          </label>
+          <input type="text" name="address" id="add">
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="submit">
+      <input type="submit" value="Buy Now">
+    </div>
+  </form>
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="products">
+        <h3>Products</h3>
+        <a href="finalpage2.html">Phone 1|1+</a><br>
+        <a href="finalpage3.html">Phone 2|2+</a><br>
+        <a href="finallap2.html">Thunder </a><br>
+        <a href="finallap1.html">PikaBook 1</a><br>
+        <a href="finanbud.html">Buds 1|1+</a>
+      </div>
+      <div class="about us">
+        <h3>About Us</h3>
+        <a href="#">About Us</a>
+      </div>
+      <div class="contact">
+        <h3>Contact</h3>
+        <a href="#">bt22cse063@iiitn.ac.in</a><br>
+        <a href="#">bt22cse068@iiitn.ac.in</a><br>
+        <a href="#">bt22cse060@iiitn.ac.in</a>
+      </div>
+
+
+    </div>
+    <div class="footer-legal">
+      <p>Copyright ⓒ 2023-2023 Pikachu All Rights reserved. <br>
+        "Please dispose of e-waste and plastic waste responsibly."<br>
+        "For more information or e-waste pick up, please call 1800 5 7267864."<br></p>
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

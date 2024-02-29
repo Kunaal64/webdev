@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: rgb(47, 45, 45);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0%;
+}
+
+.ul {
+    list-style: none;
+}
+
+.ul li {
+    display: inline-block;
+    margin-inline: 1.5rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+li,
+a,
+button {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.header {
+    background-color: rgb(1 1 1 /70%);
+    padding: 1rem;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+
+    backdrop-filter: blur(20px);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.head-image img {
+    width: 100vw;
+    
+    object-fit: cover;
+}
+
+.device {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+.device-radio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.device-type input .radio-tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 100ms ease;
+
+}
+
+.radio-tile {
+    width: 12rem;
+    height: 3.9rem;
+    border-radius: 10px;
+    /* border: 3px white solid; */
+    padding: 15px;
+    margin: 20px;
+    background-color: black;
+}
+
+.device-type input {
+    position: absolute;
+    width: 12rem;
+    height: 3.5rem;
+    margin: 20px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+input:hover+.radio-tile {
+    background-color: gray;
+}
+
+input:checked+.radio-tile {
+    border: 2px springgreen solid;
+
+}
+
+.spec {
+    margin: 10px;
+}
+
+.device-property {
+    width: 40rem;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 15px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.color-property {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px;
+    height: 10rem;
+
+}
+
+.spec {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 16px;
+}
+
+.color-radio {
+    display: flex;
+    justify-content: end;
+}
+
+.color-type input .color-tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 100ms ease;
+
+}
+
+.color-property {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.color-tile {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.csize {
+    width: 100%;
+}
+
+.color-type input {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    margin: 20px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+input:checked+.color-tile {
+    border: 2px springgreen solid;
+    font-weight: 400;
+
+}
+
+.vl {
+    border-left: 1px solid rgb(255, 255, 255);
+    height: 300px;
+
+
+    margin-left: -3px;
+    top: 0;
+}
+
+hr {
+    width: 85%;
+}
+
+.address {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    margin: 30px;
+}
+
+.address input {
+    width: 30rem;
+    height: 3rem;
+    font-size: 12pt;
+    color: black;
+    border-radius: 5px;
+}
+
+.submit {
+    padding-inline: 45%;
+    margin-bottom: 20px;
+}
+
+.submit input {
+    padding: 0;
+    background-color: green;
+    height: 4rem;
+    width: 8rem;
+    border-radius: 15px;
+    font-size: larger;
+}
+
+.footer {
+    padding: 20px;
+    background-color: black;
+}
+
+.footer-grid a {
+    font-size: smaller;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-inline: 30px;
+}
+
+.footer-legal {
+    font-size: smaller;
+    margin-top: 20px;
+}
